@@ -52,6 +52,11 @@
     </div>
   </body>
   <script type="text/javascript">
-    document.getElementById("pBut").onclick = function() {for (let i of document.getElementsByTagName("video")) i.play()}
+    document.getElementById("pBut").onclick = function() {
+      for (let i of document.getElementsByTagName("video")) {
+        i.currentTime = 0;
+        i.play();
+      }
+    }
   </script>
 </html>
