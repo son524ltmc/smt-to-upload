@@ -5,16 +5,46 @@
     <title>Hello :D</title>
   </head>
   <style media="screen">
+    #tiktok {
+      color: blue;
+    }
+    .dBut {
+      color: red;
+      border-radius: 10px;
+      border: 2px black solid;
+      padding: 2px 5px;
+    }
     a {
       text-decoration: none;
-      color: blue;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    #pBut {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60px;
+      height: 30px;
+      border-radius: 10px;
     }
   </style>
   <body>
-    <h1>Nguồn: Tiktok <a target="_blank" href="https://www.tiktok.com/@sasorikyogin">@sasorikyogin</a></h1>
-    <h2>Video của ae đây <a target="_blank" href="./230808062022.mp4" download>Tải về</a></h2>
-      <video src="./230808062022.mp4" controls width="720px"></video>
-    <h2>Bản raw <a target="_blank" href="./232608062022.mp4" download>Tải về</a></h2>
-      <video src="./232608062022.mp4" controls width="720px"></video>
+    <h1>Nguồn: Tiktok <a target="_blank" id="tiktok" href="https://www.tiktok.com/@sasorikyogin">@sasorikyogin</a></h1>
+    <button id="pBut" type="button">Play</button>
+    <div class="content">
+      <div>
+        <h2>Video của ae đây <a target="_blank" class="dBut" href="https://son524ltmc.tk/230808062022.mp4" download>Tải về</a></h2>
+        <video src="https://son524ltmc.tk/230808062022.mp4" controls width="70%"></video>
+      </div>
+      <div>
+        <h2>Bản raw <a target="_blank" class="dBut" href="https://son524ltmc.tk/232608062022.mp4" download>Tải về</a></h2>
+        <video src="https://son524ltmc.tk/232608062022.mp4" controls width="70%"></video>
+      </div>
+    </div>
   </body>
+  <script type="text/javascript">
+    document.getElementById("pBut").onclick = function() {for (let i of document.getElementsByTagName("video")) i.play()}
+  </script>
 </html>
